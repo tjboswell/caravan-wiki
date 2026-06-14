@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx quartz *)",
+      "Bash(git verify-pack *)",
+      "Bash(git rev-list *)",
+      "Bash(git repack *)",
+      "Bash(rsync -a --exclude='.git' ../caravan-wiki-old/ .)",
+      "Bash(git branch *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git config *)",
+      "Bash(git push *)"
+    ]
+  }
+}

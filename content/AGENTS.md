@@ -5,6 +5,12 @@ This file governs how any agent (or human editor acting as one) reads and edits 
 
 ---
 
+## Where the wiki lives
+
+The canonical wiki content lives in **`caravan-wiki/content`** — the git-tracked [Quartz](https://quartz.jzhao.xyz/) repo that publishes the site. All pages (`systems`, `decisions`, `open`, `references`, `meta`, `Home.md`) are under that folder. Edit pages there.
+
+---
+
 ## Prime directive
 
 > Agents **transcribe, cross-link, and maintain**. They do **not** invent design.
