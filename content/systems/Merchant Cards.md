@@ -3,9 +3,9 @@ type: system
 status: live
 touches: [Towns, Cargo, Actions, Contracts]
 shaped_by: ["Merchant cards refresh per town, kept when bought", "Actions limited per town, buy and use both cost"]
-open: [What an action can do]
+open: [What an action can do, Core-verb]
 tags: [run]
-updated: 2026-06-13
+updated: 2026-06-20
 ---
 
 # Merchant Cards
@@ -24,6 +24,10 @@ Each [[systems/Towns|town]] offers a row of local merchant cards — local trade
 
 The specific verbs an action can perform — the full action vocabulary — is an open question. See [[open/What an action can do]].
 
+## ⚠ Placeholder note: converter verb
+
+**The current "2× T1 → 1× T2" conversion verb is a placeholder.** It has not been locked as the primary mechanic. The central unresolved design question — what the player's primary verb actually is — is tracked in [[open/Core-verb]]. Do not treat conversion as final. Candidates include conversion (current), market/geography-based value, and synergy-trigger engines.
+
 ## Depends on / feeds into
 
 - Depends on: [[systems/Towns]] (refresh source), [[systems/Actions]] (both buy and use cost an action)
@@ -32,6 +36,7 @@ The specific verbs an action can perform — the full action vocabulary — is a
 ## Open questions
 
 - [[open/What an action can do]] — the full verb list for merchant card abilities is unresolved
+- [[open/Core-verb]] — the conversion verb itself is a placeholder pending the core-verb decision
 
 ## Decisions that shaped this
 

@@ -1,11 +1,11 @@
 ---
 type: system
 status: live
-touches: [The Run, Route, Merchant Cards, Contracts]
+touches: [The Run, Route, Merchant Cards, Contracts, Relics]
 shaped_by: [Era equals town, "Merchant cards refresh per town, kept when bought", Next-town preview on last action]
 open: [Route tradeoff axis]
 tags: [run]
-updated: 2026-06-13
+updated: 2026-06-20
 ---
 
 # Towns
@@ -14,7 +14,7 @@ updated: 2026-06-13
 
 ## How it works
 
-Towns are what were formerly called "eras." A run is a journey through a sequence of towns; when the route ends, you go home. Each town is a discrete stop where you spend your [[systems/Actions|actions]].
+Towns are what were formerly called "eras." A run is a journey through a sequence of towns grouped into areas. Each town is a discrete stop where you spend your [[systems/Actions|actions]].
 
 **Each town contains:**
 
@@ -24,10 +24,27 @@ Towns are what were formerly called "eras." A run is a journey through a sequenc
 
 **Previewing:** After each town, when you choose your next stop from the [[systems/Route|route options]], you see something about what's coming. This preview lets you position your [[systems/Cargo|cargo]] before you arrive — anticipation is where skill lives. See [[decisions/Next-town preview on last action]].
 
+## Town-type vocabulary (design intent, deferred)
+
+A recombining set of ~4 town types, paced deliberately by the route generator:
+
+| Type | What it offers | Intensity |
+|------|----------------|-----------|
+| **Market** | Full economic board — merchant cards + contracts | Heavy |
+| **Crossroads** | Route fork with minimal board — fast, but the choice is weighty | Light |
+| **Offer / Event** | One take-it-or-leave-it choice | Exhale |
+| **Gate** | Sell all cargo + resupply check (see [[systems/Gates]]) | Milestone |
+
+[[systems/Relics|Relics]] are bought in Market and Offer towns.
+
+**Pacing principle:** The route generator deliberately alternates heavy and light nodes; don't randomize intensity. A "simple" turn must still be a genuine fast choice, never an autopilot click.
+
+**Status: deferred in current prototype.** All towns are currently Markets. Town-type variety is logged as design intent, not yet built.
+
 ## Depends on / feeds into
 
 - Depends on: [[systems/Route]] (which town comes next), [[systems/Actions]] (how many turns per town)
-- Feeds into: [[systems/Merchant Cards]] (refresh), [[systems/Contracts]] (rotation), [[systems/Route]] (next choice)
+- Feeds into: [[systems/Merchant Cards]] (refresh), [[systems/Contracts]] (rotation), [[systems/Route]] (next choice), [[systems/Relics]] (purchase point)
 
 ## Open questions
 
