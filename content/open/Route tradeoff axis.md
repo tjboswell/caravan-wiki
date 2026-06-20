@@ -21,6 +21,12 @@ tags: [tuning]
 
 These are not mutually exclusive; the prototype may combine several axes in a single route choice.
 
+## Concrete candidate axes (surfaced in design session)
+
+- **Dynamic local market / demand** — towns price good categories differently. A town flooded with grain buys it cheap; one starved for it buys high. The same cargo has different value at different stops, and reading the board is the skill.
+- **Known vs. unknown towns** — face-down preview / push-your-luck without a bust. You see *that* a town exists and maybe its type, but not its board. Commit blind for higher upside, or take the safe known option.
+- **Market towns vs. production towns** — market towns let you convert/buy; production towns generate new goods. Different roles in the route, not just different conversion rates.
+
 ## Notes
 
 This is explicitly a **tuning question best answered by playing, not theorizing.** The prototype's route-choice mechanic needs to surface one of these axes clearly enough to feel like a real decision, not a lookup. Start simple (one axis) and add complexity only if needed.
