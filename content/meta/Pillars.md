@@ -1,6 +1,6 @@
 ---
 type: meta
-updated: 2026-07-01
+updated: 2026-06-13
 ---
 
 # Pillars
@@ -9,18 +9,18 @@ updated: 2026-07-01
 
 ## The pillars
 
-**Single-player.** No live market, no servers, no forever-game. A contained solo roguelike.
+**Single-player.** No live market, no MMO, no servers, no forever-game. This is a contained, solo experience.
 
-**No combat.** Conflict is economic and logistical, not a health bar. See [[decisions/No combat]].
+**No combat.** Conflict — if any — is economic and logistical, not a health bar. See [[decisions/No combat]].
 
-**Controller-first & pauseable.** Menu/list/card/grid-driven, fully playable on Steam Deck, pauseable any time. A **static grid** navigated with a d-pad is fine; freeform drag-and-drop placement is not. See [[decisions/Controller-first, non-spatial]].
+**Boardable.** Every core mechanic must work with paper, pencil, cards, maybe dice — discrete state, clear rules, no hidden real-time simulation in the core loop. See [[decisions/Boardable as a design filter]].
 
-**Decisions downstream of randomness.** Luck deals the *situation* (which goods land on the grid, which cards you draw, what the shop offers); your *skill* is what you do with it. Never luck that resolves the outcome.
+**Controller-first & pauseable.** Menu/list/card-driven, not spatial. No freeform grids. Fully playable on Steam Deck with the TV on; pauseable at any time. See [[decisions/Controller-first, non-spatial]].
 
-**Greed is rewarded, not punished.** The giant cash-in is the joy. Tension comes from gate *demand* and the shared-pool economy, never from a bust or decay. See [[decisions/No overheat, greed is not punished]].
+**Decisions downstream of randomness.** Luck deals you a *situation* (which towns, which merchants, which contracts); your *skill* is what you do with it. Never luck that resolves the outcome for you — no slot-machine feel.
 
-**The run is the whole game.** No hub to prop it up. It must be fun naked — and now it is the product, not a throwaway. Persistence is a thin [[systems/Unlock Pool|unlock pool]]. See [[decisions/Drop incremental hub for thin unlock pool]].
+**Fun-naked run.** The run must be fun with no hub attached. See [[decisions/Run must be fun naked]].
 
-**Juice is central.** Gnorp-style: piles of heat, cascading spreads, multipliers popping, a board detonating on Sell. The scaling now lives *inside the run*, so the juice surface is the grid and the cash-in. See [[references/Gnorp Apologue]].
+**Juice is central.** Gnorp-style: lots of cheap things individually simulated and drawn without restraint — flowing cargo, converting goods, piling materials. The engine and cargo conversions are the primary juice surfaces. See [[references/Gnorp Apologue]].
 
 [[Home]]

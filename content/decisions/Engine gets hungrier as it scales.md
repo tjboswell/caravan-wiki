@@ -1,16 +1,14 @@
 ---
 type: decision
-status: superseded
+status: live
 affects: [The Hub, Materials]
 rejected: [flat consumption rate, player-controlled consumption pace]
 supersedes:
-superseded_by: [Drop incremental hub for thin unlock pool]
+superseded_by:
 decided: 2026-06-13
 ---
 
 # Engine gets hungrier as it scales
-
-> ⚠️ **SUPERSEDED 2026-07-01** — No production engine; the in-run Heat snowball replaces it. See [[decisions/Drop incremental hub for thin unlock pool]].
 
 > As you upgrade hub buildings, they consume materials faster — a bigger engine is a hungrier engine.
 

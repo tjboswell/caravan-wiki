@@ -1,16 +1,14 @@
 ---
 type: decision
-status: superseded
+status: live
 affects: [Contracts, Materials, Cargo]
 rejected: [even-split gold payout, generic resource payout]
 supersedes:
-superseded_by: [Points are score and shop currency]
+superseded_by:
 decided: 2026-06-13
 ---
 
 # Contracts pay specific materials not even split
-
-> ⚠️ **SUPERSEDED 2026-07-01** — No materials; selling pays points. See [[decisions/Points are score and shop currency]].
 
 > Contracts pay out specific named materials (ore, lumber, etc.), not a generic even split or gold pile.
 

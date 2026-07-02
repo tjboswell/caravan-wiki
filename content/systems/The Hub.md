@@ -1,6 +1,6 @@
 ---
 type: system
-status: superseded
+status: live
 touches: [The Run, Materials]
 shaped_by: [Two halves run and hub, Hub is a quick pit stop, "Harmless idle, no punishment", Engine gets hungrier as it scales, Runs supply materials not gold]
 open: [Hub reward-consequence structure in detail, Theme - setting]
@@ -9,8 +9,6 @@ updated: 2026-06-13
 ---
 
 # The Hub
-
-> ⚠️ **SUPERSEDED 2026-07-01** — The incremental hub is cut. Persistence -> [[systems/Unlock Pool]]; in-run scaling -> [[systems/Heat]]. See [[decisions/Drop incremental hub for thin unlock pool]].
 
 > A scaling production/automation engine — Tower Wizard / Gnorp-style "watch it run" incremental — that the run supplies with materials. The hub is memory and consequence, not the main event.
 

@@ -1,16 +1,14 @@
 ---
 type: decision
-status: superseded
+status: live
 affects: [The Run, The Hub]
 rejected: [single unified loop, hub-first design]
 supersedes:
-superseded_by: [Drop incremental hub for thin unlock pool]
+superseded_by:
 decided: 2026-06-13
 ---
 
 # Two halves run and hub
-
-> ⚠️ **SUPERSEDED 2026-07-01** — The hub is cut; the run is the whole game. See [[decisions/Drop incremental hub for thin unlock pool]].
 
 > The game is two distinct halves: the run (active skill-based expedition) and the hub (scaling production engine).
 

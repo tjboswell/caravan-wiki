@@ -1,32 +1,52 @@
 ---
 type: meta
-updated: 2026-07-01
+updated: 2026-06-20
 ---
 
 # Prototype Scope
 
-> The grey-box that proves the loop — no theme, no art, no meta.
+> The absolute minimum grey-box run — no hub, no gold, no theme, no art.
 
-## What to build
+## Build status
 
-- A 4×4 [[systems/The Grid|grid]] of goods (type + base value + heat).
-- An [[systems/Action Deck|action deck]]: draw a hand, a few plays per round; cards stack / multiply / spread heat.
-- [[systems/Selling|Sell]] on a cooldown to bank points; heated slots refill.
-- A [[systems/The Shop|shop]] that spends those same points on multipliers, plays, and cards.
-- Escalating [[systems/Gates|gates]]: reach a rising point target in a round budget; miss = run ends.
+**Inc 0** (prototyped): single-town buy/use/fulfill loop; score = cargo value.
 
-No hub, no theme, no art, no meta unlocks yet. (A working single-file version exists; the real build is `prototype-heat/`, see its `ARCHITECTURE.md`.)
+**Inc 2** (prototyped): areas + [[systems/Gates|gates]] + resupply floor + ante-style floor scaling + in-town [[systems/Relics|relics]] economy.
+
+## What's in scope
+
+- ~N areas, each ~3–4 towns, with a gate between each area.
+- Each town: a row of merchant/conversion cards (refresh per town, keep what you buy) + a row of contracts (specific-material payouts, 1–2 rotate per town).
+- ~3 actions per town. Buying, using, and fulfilling contracts all cost an action.
+- Cargo traded up in value toward contracts; sold at each gate.
+- Gate resupply floor scales per area (`[6, 13, 24]` — current values, tuning knob).
+- Overshoot the floor → bigger restock next area.
+- In-town relic purchases (cost: mid-tier cargo; 4-in-pool / 3-slots).
+- Score = contract points banked + all gate cargo sales.
+
+No art. No hub. No theme. No gold. Grey boxes and text.
+
+## Deferred (logged, not built)
+
+- **Branching route** — pick 1 of 2–3 next towns with preview; currently linear within an area
+- **Town-type variety** — Market / Crossroads / Offer / Gate taxonomy; currently all towns are Markets
+- **Core-verb pivot** — conversion is placeholder; see [[open/Core-verb]]
 
 ## The one question it must answer
 
-> *Is loading a grid of heat, timing cooldown-gated sells, and betting points between engine and gate fun for ~15 minutes, naked?*
+> *Is trading cargo up through areas toward gate floors fun for ~15 minutes, naked, with nothing else attached?*
 
-Early prototyping says the build-and-cash loop is satisfying; the shop economy is what supplies the reason to sell early and the invest-vs-bank tension. Tune the gate curve against shop prices until "invest vs. bank" is a real gut-check.
+**If yes** → everything slots on top of a proven core. Build the hub, add theme, add juice.
 
-## Left open for prototype
+**If no** → fix the core now, while it's cheap. Do not move on to the hub until this question is answered.
 
-- [[open/Journey stops vs free shop]] — how the shop is reached
-- [[open/What an action can do]] — expand the card grammar only as felt needs arise
-- [[open/Theme - setting]] — systems are theme-agnostic
+## What the prototype leaves open
+
+All tuning questions are deliberately left for prototype — see:
+- [[open/Actions per town and towns per run]] — ~3 and ~10–12 are starting hypotheses
+- [[open/Route tradeoff axis]] — feel out in play, don't theorize
+- [[open/What an action can do]] — start minimal (buy, use, fulfill); expand only as needed
+- [[open/Cargo space limited or not]] — assume unlimited; add limit only if run feels too loose
+- [[open/Core-verb]] — conversion is placeholder; do not lock until this is resolved
 
 [[Home]]

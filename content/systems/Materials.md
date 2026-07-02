@@ -1,16 +1,14 @@
 ---
 type: system
-status: superseded
+status: live
 touches: [The Run, The Hub, Contracts, Cargo]
 shaped_by: [Runs supply materials not gold, Contracts pay specific materials not even split, Engine gets hungrier as it scales]
-open: [Hub reward-consequence structure in detail, Joker shop currency model]
+open: [Hub reward-consequence structure in detail]
 tags: [cross]
 updated: 2026-06-13
 ---
 
 # Materials
-
-> ⚠️ **SUPERSEDED 2026-07-01** — No materials currency. Selling pays points. See [[decisions/Points are score and shop currency]].
 
 > The coupling currency — what runs supply and the hub consumes. Specific materials (not gold) are what connect run choices to hub needs.
 
@@ -34,7 +32,6 @@ The exact reward/consequence structure of the hub (what happens at what threshol
 ## Open questions
 
 - [[open/Hub reward-consequence structure in detail]] — what the hub's milestone/consequence structure looks like in detail
-- [[open/Joker shop currency model]] — one option makes materials the spendable joker-shop currency, which would bump the "materials not gold" decision
 
 ## Decisions that shaped this
 

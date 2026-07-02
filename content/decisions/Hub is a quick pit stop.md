@@ -1,16 +1,14 @@
 ---
 type: decision
-status: superseded
+status: live
 affects: [The Hub]
 rejected: [hub as deep management sim, equal time split]
 supersedes:
-superseded_by: [Drop incremental hub for thin unlock pool]
+superseded_by:
 decided: 2026-06-13
 ---
 
 # Hub is a quick pit stop
-
-> ⚠️ **SUPERSEDED 2026-07-01** — No hub. See [[decisions/Drop incremental hub for thin unlock pool]].
 
 > You pop into the hub between runs, spend and upgrade, and leave — it is not the main event.
 

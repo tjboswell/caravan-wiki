@@ -1,6 +1,6 @@
 ---
 type: decision
-status: revisiting
+status: live
 affects: [Route]
 rejected: [full Slay the Spire map visible from start, fixed linear sequence]
 supersedes:
@@ -9,8 +9,6 @@ decided: 2026-06-13
 ---
 
 # Route choice over full map
-
-> 🔄 **REVISITING 2026-07-01** — Route choice returns only under the journey option. See [[open/Journey stops vs free shop]].
 
 > You pick the next town from ~2–3 options step by step — not a full map you see from the start.
 

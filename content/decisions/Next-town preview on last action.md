@@ -1,6 +1,6 @@
 ---
 type: decision
-status: revisiting
+status: live
 affects: [Route, Towns]
 rejected: [blind route choice, full route revealed from start]
 supersedes:
@@ -9,8 +9,6 @@ decided: 2026-06-13
 ---
 
 # Next-town preview on last action
-
-> 🔄 **REVISITING 2026-07-01** — Tied to the town/route structure now under reconsideration. See [[open/Journey stops vs free shop]].
 
 > When you choose your next town from the route options, you see a preview of what's coming — so you can reposition your cargo before you arrive.
 

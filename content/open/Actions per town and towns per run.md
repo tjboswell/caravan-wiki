@@ -1,14 +1,12 @@
 ---
 type: open
-status: answered
+status: open
 affects: [Actions, The Run]
-answered_by: [Escalating score gates structure the run]
+answered_by:
 tags: [tuning]
 ---
 
 # Actions per town and towns per run
-
-> ✅ **ANSWERED 2026-07-01** — Moot — the run is gates with a round budget, not towns with per-town actions. See [[decisions/Escalating score gates structure the run]].
 
 > How many actions does each town give? How many towns make a run?
 
