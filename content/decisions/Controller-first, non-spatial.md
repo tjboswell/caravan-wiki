@@ -14,6 +14,8 @@ decided: 2026-06-13
 
 ## Reasoning
 
+**2026-07-01 clarification:** a *static* grid (fixed cells, d-pad selectable, no movement) is compatible with this decision. What was rejected is *freeform* drag-and-drop placement, not a fixed board. The [[systems/The Grid|4×4 grid]] is fine.
+
 Spatial games require precise cursor or touch input and are hard to pause mid-gesture. A menu/card-driven game can be navigated entirely with a d-pad and a few buttons — Steam Deck native. It also supports the "TV on, casual play" context: you can put it down mid-run without losing state. This shapes the route display (a list of 2–3 options, not a map grid), the merchant card display (a row you scroll through), and the action interface.
 
 Non-spatial also reinforces the boardable filter (see [[decisions/Boardable as a design filter]]): boards have discrete cells; menus have discrete items. Both are navigable without a mouse.

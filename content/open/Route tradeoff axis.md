@@ -18,14 +18,11 @@ tags: [tuning]
 - **Specialist vs. generalist** — jackpot for your specific build vs. safe all-rounder
 - **Now vs. later** — immediate payoff vs. sets up a better next town
 - **Known vs. unknown** — a clear town vs. a "?" gamble with higher upside
+- **Dynamic demand** — towns whose contract demand shifts over the run, so the "best" town depends on timing and current cargo rather than a fixed profile
 
-These are not mutually exclusive; the prototype may combine several axes in a single route choice.
+These are not mutually exclusive; the prototype may combine several axes in a single route choice. The two concrete candidates currently in focus are **dynamic demand** and **known vs. unknown towns**.
 
-## Concrete candidate axes (surfaced in design session)
-
-- **Dynamic local market / demand** — towns price good categories differently. A town flooded with grain buys it cheap; one starved for it buys high. The same cargo has different value at different stops, and reading the board is the skill.
-- **Known vs. unknown towns** — face-down preview / push-your-luck without a bust. You see *that* a town exists and maybe its type, but not its board. Commit blind for higher upside, or take the safe known option.
-- **Market towns vs. production towns** — market towns let you convert/buy; production towns generate new goods. Different roles in the route, not just different conversion rates.
+A non-pandering route (towns that don't always offer what your build wants) is also the route-side counter-force to the funneling exploit — see [[open/Specialization exploit fix]].
 
 ## Notes
 

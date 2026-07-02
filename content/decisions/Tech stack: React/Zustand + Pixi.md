@@ -1,14 +1,16 @@
 ---
 type: decision
-status: live
+status: superseded
 affects: []
 rejected: [Unity, Godot, pure canvas with custom state, Svelte + Canvas]
 supersedes:
-superseded_by:
+superseded_by: [Web now, Godot to ship]
 decided: 2026-06-13
 ---
 
 # Tech stack: React/Zustand + Pixi
+
+> ⚠️ **SUPERSEDED 2026-07-01** — Web to prototype, Godot to ship; Pixi/Tauri path dropped. See [[decisions/Web now, Godot to ship]].
 
 > React + Zustand + Vite (TypeScript) for UI/state; PixiJS (or hand-rolled canvas/WebGL) for the animated juice layer. Wrapped in Tauri/Electron for Steam.
 

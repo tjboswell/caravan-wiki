@@ -1,12 +1,14 @@
 ---
 type: open
-status: open
+status: answered
 affects: [Cargo, The Run]
-answered_by:
+answered_by: [Heat is the core run mechanic]
 tags: [tuning]
 ---
 
 # Cargo space limited or not
+
+> ✅ **ANSWERED 2026-07-01** — Moot — the board is a fixed 4×4 grid; there is no unbounded cargo hold. See [[decisions/Heat is the core run mechanic]].
 
 > Should cargo capacity be limited? If so, how?
 

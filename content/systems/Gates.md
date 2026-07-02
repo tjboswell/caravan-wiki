@@ -1,41 +1,38 @@
 ---
 type: system
 status: live
-touches: [The Run, Route, Cargo, Contracts]
-open: []
+touches: [Selling, The Shop, The Run, Unlock Pool]
+shaped_by: [Escalating score gates structure the run, Points are score and shop currency, "No overheat, greed is not punished"]
+open: [Journey stops vs free shop]
 tags: [run]
-updated: 2026-06-20
+updated: 2026-07-01
 ---
 
 # Gates
 
-> The boundary between areas — sell all cargo, check the resupply floor, and either continue or end the run gracefully.
+> Balatro-style blinds: reach a rising point target within a round budget. Miss it, the run ends; clear it, the target jumps. The run's clock and fail state.
 
 ## How it works
 
-A gate sits at the end of every area (a cluster of ~3–4 [[systems/Towns|towns]]). Reaching a gate triggers a forced sale and a pass/fail check.
+Each gate has a **point target** and a **round budget**. You [[systems/Selling|sell]] to bank points against the target. Clear it and the next gate's target grows (roughly ×1.5); miss it and the run ends — your score is how deep you reached.
 
-**Cargo sale:** All held [[systems/Cargo|cargo]] is converted to score for the kingdom. There is no carrying goods across the boundary — what you have is what gets sold.
+**Demand, not danger.** Gates are a floor to clear, never a ceiling to fear (see [[decisions/No overheat, greed is not punished]]). They're tuned so early gates fall to a starter deck but later ones are impossible without [[systems/The Shop|shop]] upgrades — which is what forces the reinvest decision and makes the engine matter.
 
-**Resupply floor:** A single threshold you must clear to continue. What counts toward it:
-- [[systems/Contracts|Contract]] points banked during the area.
-- The cargo sale at the gate itself.
-
-Clear the floor → you're resupplied and move into the next area. Miss it → the run ends.
-
-**Failure is graceful:** Missing the floor is not a wipe. The cargo *was* sold and the points *do* count. It reads as "came up short for the crown" — you delivered what you could, the expedition simply couldn't sustain itself. The no-punishing-wipe principle holds: score is always preserved.
-
-**Overshoot:** Clearing the floor by a wide margin earns a bigger restock at the start of the next area — a smooth "push harder = start richer" incentive. There is no ceiling on benefit from performing well.
-
-## Scaling
-
-Floors scale per area in a step-function, Balatro-ante style. Current values: `[6, 13, 24]`. These are a tuning knob — intentionally lenient early, steeper late.
-
-The floor-vs-area-earning-ceiling ratio is the central balance lever. A *lazy* run should fail; a *sharp* run should breathe. Tune so the gate feels like a real verdict, not a formality.
+**No wipe.** Ending a run never costs your unlocked content — that persists in the [[systems/Unlock Pool]].
 
 ## Depends on / feeds into
 
-- Depends on: [[systems/Cargo]] (what's sold), [[systems/Contracts]] (points banked), [[systems/Route]] (area structure)
-- Feeds into: [[systems/The Run]] (run continuation or end), [[systems/Cargo]] (restock after gate)
+- Depends on: [[systems/Selling]] (points), [[systems/The Shop]] (spending competes with the target)
+- Feeds into: [[systems/The Run]] (clock + fail), [[systems/Unlock Pool]] (depth reached → unlocks)
+
+## Open questions
+
+- [[open/Journey stops vs free shop]] — whether gates are pure blinds or waypoints on a route
+
+## Decisions that shaped this
+
+- [[decisions/Escalating score gates structure the run]] — the structure itself
+- [[decisions/Points are score and shop currency]] — measured in the spendable pool
+- [[decisions/No overheat, greed is not punished]] — the pressure lives here, not in a bust
 
 [[Home]]

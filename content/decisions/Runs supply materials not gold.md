@@ -1,14 +1,16 @@
 ---
 type: decision
-status: live
+status: superseded
 affects: [Materials, The Hub, Contracts, Cargo]
 rejected: [gold-only coupling, abstract score coupling]
 supersedes:
-superseded_by:
+superseded_by: [Points are score and shop currency]
 decided: 2026-06-13
 ---
 
 # Runs supply materials not gold
+
+> ⚠️ **SUPERSEDED 2026-07-01** — No hub to feed; runs pay points. See [[decisions/Points are score and shop currency]].
 
 > The run's output is specific materials sent to the hub — not abstract gold. Material coupling > money coupling.
 

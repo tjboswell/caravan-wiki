@@ -1,69 +1,70 @@
 # Home
 
-> A traveling merchant runs short, skill-based trade expeditions to feed a scaling production empire. No combat. Theme TBD.
+> A single-player roguelike deckbuilder: pile **heat** onto a grid of trade goods, then cash it all in one satisfying sell — building an exponential engine to clear ever-hungrier score gates. No combat. No hub. Theme TBD.
 
-See [[meta/Pitch]] for the full pitch. See [[AGENTS.md]] for editorial rules.
+See [[meta/Pitch]] for the full pitch. See [[AGENTS.md]] for editorial rules. The build lives in `prototype-heat/` (see its `ARCHITECTURE.md`).
 
 ---
 
-## Systems
+## Systems (live)
 
 | System | Summary |
 |---|---|
-| [[systems/The Run]] | The main event — a skill + luck trade expedition through a route of towns. |
-| [[systems/The Hub]] | The scaling production engine; the hunger loop; harmless idle. |
-| [[systems/Towns]] | The stops on a run; local merchants; contract rotation clock. |
-| [[systems/Route]] | Pick the next town from ~2–3 options; push-your-luck lives here. |
-| [[systems/Cargo]] | Goods you carry and trade up in value across a run. |
-| [[systems/Merchant Cards]] | Bought in towns; convert/upgrade goods; refresh per town, kept when bought. |
-| [[systems/Contracts]] | Reward cards; pay specific materials; 1–2 rotate per town. |
-| [[systems/Actions]] | Turn economy; ~3 per town; buying and using both cost an action. |
-| [[systems/Materials]] | What runs supply and the hub consumes; the coupling currency. |
+| [[systems/The Run]] | The whole game — the round loop, gates, and fail state. |
+| [[systems/The Grid]] | The 4×4 board of goods heat is loaded onto. |
+| [[systems/Heat]] | The substance; stack / multiply / spread. |
+| [[systems/Action Deck]] | Your engine — a draw-deck of selector×verb cards. |
+| [[systems/Selling]] | The cash-in trigger; cooldown; load-then-pop. |
+| [[systems/The Shop]] | Spend points to grow the engine; invest-vs-bank. |
+| [[systems/Gates]] | Escalating score targets; the clock and fail state. |
+| [[systems/Joker Combos]] | Cards that trigger off each other; the Balatro lever. |
+| [[systems/Unlock Pool]] | Thin StS-style persistence; the "one more run" hook. |
+
+## Systems (archived — kept for history)
+
+- **Superseded:** [[systems/The Hub]] · [[systems/Materials]] · [[systems/Cargo]] · [[systems/Merchant Cards]] · [[systems/Actions]]
+- **Revisiting** (may return under the journey option): [[systems/Towns]] · [[systems/Route]] · [[systems/Contracts]]
 
 ---
 
 ## Meta
 
-- [[meta/Pitch]] — the one-sentence + short pitch
-- [[meta/Feel Target]] — Balatro grin / Century engine / Gnorp scale / merchant nerve
+- [[meta/Pitch]] — the pitch
+- [[meta/Feel Target]] — the exponential grin / build-and-release / in-run scaling / merchant nerve
 - [[meta/Pillars]] — the design constraints
-- [[meta/Tech Stack]] — the decided stack + architecture rules
-- [[meta/Prototype Scope]] — the grey-box run and the one question it must answer
+- [[meta/Tech Stack]] — web now, Godot to ship
+- [[meta/Prototype Scope]] — the grey-box and the one question
 
 ---
 
 ## Open questions
 
-These are unresolved. Do not act on them as if they were decided.
-
-- [[open/Route tradeoff axis]] — what makes the route choice a real tradeoff (tuning)
-- [[open/What an action can do]] — the full action verb list (structural)
-- [[open/Actions per town and towns per run]] — the key tuning knobs (tuning)
-- [[open/Cargo space limited or not]] — first prototype assumes unlimited (tuning)
-- [[open/Theme - setting]] — deliberately deferred; systems are theme-agnostic (theme)
-- [[open/Hub reward-consequence structure in detail]] — how the hub rewards/consequences work (structural)
+- [[open/Journey stops vs free shop]] — how the shop is reached (structural)
+- [[open/Route tradeoff axis]] — only relevant under the journey option (tuning)
+- [[open/Specialization exploit fix]] — counter-force to type-funneling (structural)
+- [[open/Theme - setting]] — deferred; systems are theme-agnostic (theme)
+- [[open/What an action can do]] — expand the card grammar as needed (structural)
 
 ---
 
-## All decisions
+## Decisions
 
-- [[decisions/Two halves run and hub]]
-- [[decisions/Run must be fun naked]]
-- [[decisions/Hub is a quick pit stop]]
-- [[decisions/Era equals town]]
-- [[decisions/Route choice over full map]]
-- [[decisions/Merchant cards refresh per town, kept when bought]]
-- [[decisions/Contracts pay specific materials not even split]]
-- [[decisions/Runs supply materials not gold]]
-- [[decisions/Actions limited per town, buy and use both cost]]
-- [[decisions/Next-town preview on last action]]
-- [[decisions/Harmless idle, no punishment]]
-- [[decisions/Engine gets hungrier as it scales]]
-- [[decisions/No combat]]
-- [[decisions/Boardable as a design filter]]
-- [[decisions/Controller-first, non-spatial]]
-- [[decisions/Tech stack: React/Zustand + Pixi]]
-- [[decisions/Console is out of scope]]
+**Live (Heat era):**
+
+- [[decisions/Heat is the core run mechanic]]
+- [[decisions/Escalating score gates structure the run]]
+- [[decisions/Points are score and shop currency]]
+- [[decisions/No overheat, greed is not punished]]
+- [[decisions/Drop incremental hub for thin unlock pool]]
+- [[decisions/Web now, Godot to ship]]
+
+**Live (carried over):**
+
+- [[decisions/Run must be fun naked]] · [[decisions/No combat]] · [[decisions/Boardable as a design filter]] · [[decisions/Controller-first, non-spatial]] · [[decisions/Console is out of scope]]
+
+**Revisiting:** [[decisions/Era equals town]] · [[decisions/Route choice over full map]] · [[decisions/Next-town preview on last action]]
+
+**Superseded:** [[decisions/Two halves run and hub]] · [[decisions/Hub is a quick pit stop]] · [[decisions/Harmless idle, no punishment]] · [[decisions/Engine gets hungrier as it scales]] · [[decisions/Runs supply materials not gold]] · [[decisions/Contracts pay specific materials not even split]] · [[decisions/Actions limited per town, buy and use both cost]] · [[decisions/Merchant cards refresh per town, kept when bought]] · [[decisions/Tech stack: React/Zustand + Pixi]]
 
 ---
 

@@ -1,14 +1,16 @@
 ---
 type: decision
-status: live
+status: superseded
 affects: [Merchant Cards, Towns]
 rejected: [persistent shop across all towns, full reset including bought cards]
 supersedes:
-superseded_by:
+superseded_by: [Heat is the core run mechanic]
 decided: 2026-06-13
 ---
 
 # Merchant cards refresh per town, kept when bought
+
+> ⚠️ **SUPERSEDED 2026-07-01** — Owned converters replaced by a draw-deck built in the shop. See [[decisions/Heat is the core run mechanic]].
 
 > Each town offers a fresh set of local merchant cards; anything you buy travels with you for the rest of the run.
 

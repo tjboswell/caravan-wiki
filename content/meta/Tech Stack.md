@@ -1,31 +1,28 @@
 ---
 type: meta
-updated: 2026-06-13
+updated: 2026-07-01
 ---
 
 # Tech Stack
 
-> The decided stack and day-one architecture rules. See [[decisions/Tech stack: React/Zustand + Pixi]].
+> Prototype in web; ship in Godot. See [[decisions/Web now, Godot to ship]].
 
-## The stack
+## Now — the web prototype
 
 | Layer | Technology | Role |
 |---|---|---|
-| UI + state | React + Zustand + Vite (TypeScript) | Menus, card displays, persistent/meta state |
-| Juice layer | PixiJS (or hand-rolled canvas/WebGL) | Cargo flow, particles, number pops, hub animation |
-| Desktop wrapper | Tauri or Electron | Steam distribution |
-| Platform target | PC/Steam + Steam Deck | See [[decisions/Console is out of scope]] |
+| Engine | TypeScript, pure & framework-free | `(state, action) => state`, seeded RNG, all game logic |
+| State bridge | Zustand | Holds run state, dispatches engine actions |
+| UI | React + Vite | Grid, hand, shop, HUD |
 
-## Why this stack
+**Portability rule:** the engine layer is pure, deterministic, and data-driven — no React, no DOM, no unseeded randomness. This is what makes the Godot port a translation, not a redesign. Full layout in `prototype-heat/ARCHITECTURE.md`.
 
-React + Zustand is the developer's professional stack — fastest path to shipping menus, UI, and persistent state. PixiJS handles the animated juice layer; the developer has a canvas/generative-art background, so the juice layer is a strength, not a risk.
+## Ship — Godot
 
-[[references/Melvor Idle]] is the precedent: a TS/web idle game that shipped on Steam successfully. This stack is native to this genre.
+The Steam release is rebuilt in Godot: native Steamworks (achievements, cloud saves, Deck verification), focus-based controller UI, and real particle/shader tooling for juice. The web build is the *executable design spec* for that port. See [[decisions/Web now, Godot to ship]] and [[decisions/Console is out of scope]].
 
-## Day-one architecture rules
+## Platform target
 
-1. **Separate clocks.** The simulation loop drives the canvas at 60fps. React re-renders **only on menu-state changes**. Never let canvas and DOM share a render cycle.
-2. **Pool everything.** Anything that spawns in bulk (particles, number pops, cargo units) must be pooled. Allocate once; reuse.
-3. **Canvas for animation, DOM for UI.** Busy/animated things go on the canvas. Static/interactive things go in the DOM. Never animate in the DOM.
+PC/Steam + Steam Deck.
 
 [[Home]]
