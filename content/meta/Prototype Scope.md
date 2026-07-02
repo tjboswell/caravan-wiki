@@ -1,37 +1,32 @@
 ---
 type: meta
-updated: 2026-06-13
+updated: 2026-07-01
 ---
 
 # Prototype Scope
 
-> The absolute minimum grey-box run — no hub, no gold, no theme, no art.
+> The grey-box that proves the loop — no theme, no art, no meta.
 
 ## What to build
 
-- A fixed sequence of ~10–12 towns.
-- Each town: a row of merchant/conversion cards (refresh per town, keep what you buy) + a row of contracts (specific-material payouts, 1–2 rotate per town).
-- ~3 actions per town. Buying and using both cost an action.
-- Cargo you trade up in value toward contracts.
-- After each town, pick 1 of ~2–3 next towns (with a preview).
-- Route ends → score = cargo value + materials banked.
+- A 4×4 [[systems/The Grid|grid]] of goods (type + base value + heat).
+- An [[systems/Action Deck|action deck]]: draw a hand, a few plays per round; cards stack / multiply / spread heat.
+- [[systems/Selling|Sell]] on a cooldown to bank points; heated slots refill.
+- A [[systems/The Shop|shop]] that spends those same points on multipliers, plays, and cards.
+- Escalating [[systems/Gates|gates]]: reach a rising point target in a round budget; miss = run ends.
 
-No art. No hub. No theme. No gold. Grey boxes and text.
+No hub, no theme, no art, no meta unlocks yet. (A working single-file version exists; the real build is `prototype-heat/`, see its `ARCHITECTURE.md`.)
 
 ## The one question it must answer
 
-> *Is trading cargo up through a route of towns fun for ~15 minutes, naked, with nothing else attached?*
+> *Is loading a grid of heat, timing cooldown-gated sells, and betting points between engine and gate fun for ~15 minutes, naked?*
 
-**If yes** → everything slots on top of a proven core. Build the hub, add theme, add juice.
+Early prototyping says the build-and-cash loop is satisfying; the shop economy is what supplies the reason to sell early and the invest-vs-bank tension. Tune the gate curve against shop prices until "invest vs. bank" is a real gut-check.
 
-**If no** → fix the core now, while it's cheap. Do not move on to the hub until this question is answered.
+## Left open for prototype
 
-## What the prototype leaves open
-
-All tuning questions are deliberately left for prototype — see:
-- [[open/Actions per town and towns per run]] — ~3 and ~10–12 are starting hypotheses
-- [[open/Route tradeoff axis]] — feel out in play, don't theorize
-- [[open/What an action can do]] — start minimal (buy, use); expand only as needed
-- [[open/Cargo space limited or not]] — assume unlimited; add limit only if run feels too loose
+- [[open/Journey stops vs free shop]] — how the shop is reached
+- [[open/What an action can do]] — expand the card grammar only as felt needs arise
+- [[open/Theme - setting]] — systems are theme-agnostic
 
 [[Home]]

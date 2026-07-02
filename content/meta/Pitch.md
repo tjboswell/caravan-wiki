@@ -1,22 +1,20 @@
 ---
 type: meta
-updated: 2026-06-13
+updated: 2026-07-01
 ---
 
 # Pitch
 
 ## One-sentence pitch
 
-You're a traveling merchant. Take short, skill-based trade runs through a route of towns — buying, converting, and upgrading your caravan's cargo to grow its value — then return home to feed a production engine that scales up and gets hungrier, pulling you back out for more.
+A single-player roguelike deckbuilder where you pile **heat** onto a grid of trade goods, then cash it all in one satisfying sell — building an exponential engine to clear ever-hungrier score gates, run after run.
 
 ## Short pitch
 
-A single-player trade game in two halves: [[systems/The Run|the run]] and [[systems/The Hub|the hub]].
+You're a merchant working a board of goods. Play cards from your deck to **stack** value onto goods, **multiply** it, and **spread** it across the grid — then hit **Sell** to cash every heated good into points. Those points are also your shop currency, so every upgrade you buy is points *not* going toward the [[systems/Gates|gate]] you have to clear: invest in your engine now, or bank to survive. Clear a gate and the next demands more; miss one and the run ends.
 
-**The Run** is a Century: Spice Road–inspired, skill + luck trade expedition through a route of towns. You buy and use merchant cards to convert and upgrade your cargo, chase contracts for specific materials, and choose your path step by step — push your luck for richer towns or play it safe. The run must be fun on its own, naked, with no hub attached.
+Between runs, a thin Slay-the-Spire-style [[systems/Unlock Pool|unlock pool]] adds new cards, relics, and goods — the "one more run" hook, no production hub to manage.
 
-**The Hub** is a scaling production engine that you pop into between runs. It consumes the specific materials you haul home. As it grows, it gets hungrier — pulling you back out on another run. If it runs dry, it just pauses. No punishment. The hub is memory and consequence; the run is the main event.
-
-No combat. Controller-first. Boardable. Theme TBD.
+No combat. Controller-first, Steam Deck–friendly. Grey-box now; theme TBD. See [[systems/The Run]] for the loop.
 
 [[Home]]

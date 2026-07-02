@@ -1,6 +1,6 @@
 ---
 type: system
-status: live
+status: superseded
 touches: [The Run, Merchant Cards, Contracts, Materials]
 shaped_by: [Runs supply materials not gold, Contracts pay specific materials not even split]
 open: [Cargo space limited or not]
@@ -9,6 +9,8 @@ updated: 2026-06-13
 ---
 
 # Cargo
+
+> ⚠️ **SUPERSEDED 2026-07-01** — Cargo -> a grid of goods carrying heat. See [[systems/The Grid]] + [[systems/Heat]] and [[decisions/Heat is the core run mechanic]].
 
 > The goods you carry across a run — traded up in value through merchant card conversions, ultimately fulfilled against contracts and sent home as specific materials.
 

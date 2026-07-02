@@ -17,11 +17,15 @@ Known action verbs from the design doc:
 - **Buy a merchant card** (costs 1 action)
 - **Use/activate a merchant card** (costs 1 action) — converts or upgrades cargo
 
+Newer candidate verb (from brainstorm, not confirmed):
+
+- **Accept a contract** — if commitment contracts land (see [[open/Fail-state approach]]), *accepting* a contract becomes its own verb, distinct from *fulfilling* one. Whether accepting costs an action is open.
+
 What is not yet decided:
 
 - Does **fulfilling a contract** cost an action, or is it automatic/free?
 - Are there other verbs — e.g. discarding cards, trading directly, scouting the next town?
-- Can you take no-action on a remaining action (pass)?
+- Can you take no-action on a remaining action (pass)? — pass/scout still open.
 - Are all merchant card activations a single action, or do some cost more?
 
 ## Notes

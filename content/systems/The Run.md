@@ -1,52 +1,47 @@
 ---
 type: system
 status: live
-touches: [Towns, Route, Cargo, Merchant Cards, Contracts, Actions, Materials]
-shaped_by: [Two halves run and hub, Run must be fun naked, No combat, Boardable as a design filter, "Controller-first, non-spatial", "Actions limited per town, buy and use both cost"]
-open: [Route tradeoff axis, Actions per town and towns per run, Cargo space limited or not, Theme - setting]
+touches: [The Grid, Heat, Action Deck, Selling, The Shop, Gates, Unlock Pool]
+shaped_by: [Heat is the core run mechanic, Escalating score gates structure the run, Points are score and shop currency, "No overheat, greed is not punished", Drop incremental hub for thin unlock pool]
+open: [Journey stops vs free shop]
 tags: [run]
-updated: 2026-06-13
+updated: 2026-07-01
 ---
 
 # The Run
 
-> The main event — a skill + luck trade expedition through a route of [[systems/Towns|towns]], trading cargo up in value. Must be fun on its own, with no hub attached.
+> The whole game now (no hub). A roguelike deckbuilder: load [[systems/Heat|heat]] onto a [[systems/The Grid|grid]] of goods, [[systems/Selling|sell]] to bank points, spend those points in the [[systems/The Shop|shop]] to grow your engine — all racing a rising [[systems/Gates|gate]].
 
 ## How it works
 
-A run is a journey through a sequence of [[systems/Towns|towns]]. The town sequence is the run's clock — when the route ends, you go home. At each town you spend a limited number of [[systems/Actions|actions]] (~3, tuning TBD) buying and using [[systems/Merchant Cards|merchant cards]] to convert and upgrade your [[systems/Cargo|cargo]], and chasing [[systems/Contracts|contracts]] that pay specific [[systems/Materials|materials]].
+A run is a series of [[systems/Gates|gates]] (Balatro blinds). Each **round**:
 
-After each town, you pick your next stop from a small set of options (~2–3) via [[systems/Route|the route choice]]. Choosing the next town also previews what's coming, so you can position your cargo before you arrive — this is where skill lives.
+1. Draw a hand from your [[systems/Action Deck|action deck]] and get a few **plays**.
+2. Play cards to **stack / multiply / spread** [[systems/Heat|heat]] across the [[systems/The Grid|grid]].
+3. When ready and off cooldown, **[[systems/Selling|Sell]]** to cash heated goods into points.
+4. Spend points in the [[systems/The Shop|shop]] on multipliers, plays, and cards — but every point spent is a point off the gate ([[decisions/Points are score and shop currency]]).
 
-**Scarcity has two axes:** time (limited towns in a run) and actions (limited per town). The first prototype uses only these two constraints. Do not add cargo-space limits until the run feels too loose — see [[open/Cargo space limited or not]].
+Clear the gate's point target within its round budget and the target jumps; miss it and the run ends (score = how deep you got). No wipe — unlocked content persists in the [[systems/Unlock Pool]].
 
-**Push-your-luck** lives in the route choice — deeper/richer towns vs. closer/safer ones — not in a bust mechanic. Failure is graceful: a bad run means a leaner haul, never a wipe.
+**Where skill lives:** reading the board the goods deck hands you, sequencing a hand into a fat pop, timing the Sell against its cooldown, and the invest-vs-bank call every round. The [[systems/Heat|multiply]] step is the "it's going exponential" moment.
 
-**Skill** = sequencing, tempo (invest vs. execute), reading upcoming towns via the preview, and adaptive routing based on current cargo state. The aim is a run strong enough to support an endless mode on its own merits.
-
-## End of run
-
-Route ends → cargo sold → proceeds (specific materials) sent to [[systems/The Hub|the hub]]. Which [[systems/Contracts|contracts]] you chased determines which [[systems/Materials|materials]] flow home.
+**No bust:** loading big is never punished — see [[decisions/No overheat, greed is not punished]]. Pressure comes from gate demand and the shared-pool economy.
 
 ## Depends on / feeds into
 
-- Depends on: [[systems/Towns]], [[systems/Route]], [[systems/Cargo]], [[systems/Merchant Cards]], [[systems/Contracts]], [[systems/Actions]], [[systems/Materials]]
-- Feeds into: [[systems/The Hub]] (materials from run proceeds)
+- Depends on: [[systems/The Grid]], [[systems/Heat]], [[systems/Action Deck]], [[systems/Selling]], [[systems/The Shop]], [[systems/Gates]]
+- Feeds into: [[systems/Unlock Pool]] (depth reached → unlocks)
 
 ## Open questions
 
-- [[open/Route tradeoff axis]] — what makes the route choice a real tradeoff
-- [[open/Actions per town and towns per run]] — the key tuning knobs
-- [[open/Cargo space limited or not]] — assumed unlimited in prototype
-- [[open/Theme - setting]] — systems are theme-agnostic
+- [[open/Journey stops vs free shop]] — free between-gate shop vs. a journey of stops
 
 ## Decisions that shaped this
 
-- [[decisions/Two halves run and hub]] — the run is one of two distinct halves
-- [[decisions/Run must be fun naked]] — validated as a standalone toy first
-- [[decisions/No combat]] — conflict is economic/logistical only
-- [[decisions/Boardable as a design filter]] — every mechanic must work on paper
-- [[decisions/Controller-first, non-spatial]] — menu/card-driven, no freeform grids
-- [[decisions/Actions limited per town, buy and use both cost]] — invest vs. execute tension
+- [[decisions/Heat is the core run mechanic]]
+- [[decisions/Escalating score gates structure the run]]
+- [[decisions/Points are score and shop currency]]
+- [[decisions/No overheat, greed is not punished]]
+- [[decisions/Drop incremental hub for thin unlock pool]]
 
 [[Home]]

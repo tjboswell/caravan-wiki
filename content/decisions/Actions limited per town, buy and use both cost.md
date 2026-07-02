@@ -1,14 +1,16 @@
 ---
 type: decision
-status: live
+status: superseded
 affects: [Actions, Merchant Cards, The Run]
 rejected: [free buys separate from action economy, unlimited actions per town]
 supersedes:
-superseded_by:
+superseded_by: [Escalating score gates structure the run]
 decided: 2026-06-13
 ---
 
 # Actions limited per town, buy and use both cost
+
+> ⚠️ **SUPERSEDED 2026-07-01** — Per-town buy/use action economy replaced by a hand + plays per round and a separate shop. See [[decisions/Escalating score gates structure the run]].
 
 > Each town gives ~3 actions; buying a merchant card costs one action and using/activating one costs one action.
 

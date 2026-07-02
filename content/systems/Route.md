@@ -1,14 +1,16 @@
 ---
 type: system
-status: live
+status: revisiting
 touches: [The Run, Towns, Cargo]
 shaped_by: [Route choice over full map, Next-town preview on last action, Era equals town, "Controller-first, non-spatial"]
-open: [Route tradeoff axis, Actions per town and towns per run]
+open: [Route tradeoff axis, Actions per town and towns per run, Specialization exploit fix]
 tags: [run]
 updated: 2026-06-13
 ---
 
 # Route
+
+> 🔄 **REVISITING 2026-07-01** — Route choice returns only if we pick the journey structure. See [[open/Journey stops vs free shop]].
 
 > Pick the next town from ~2–3 options with a preview; push-your-luck lives here — not in a bust mechanic.
 
@@ -31,8 +33,9 @@ The route is menu/list-driven, not a freeform spatial map — see [[decisions/Co
 
 ## Open questions
 
-- [[open/Route tradeoff axis]] — tempo vs. payoff vs. specialist vs. known/unknown; tune in prototype
+- [[open/Route tradeoff axis]] — tempo vs. payoff vs. specialist vs. known/unknown vs. dynamic demand; tune in prototype
 - [[open/Actions per town and towns per run]] — total run length affects how much push-your-luck matters
+- [[open/Specialization exploit fix]] — a route that doesn't pander to your build is the route-side counter-force to category-funneling
 
 ## Decisions that shaped this
 

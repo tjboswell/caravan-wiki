@@ -18,8 +18,11 @@ tags: [tuning]
 - **Specialist vs. generalist** — jackpot for your specific build vs. safe all-rounder
 - **Now vs. later** — immediate payoff vs. sets up a better next town
 - **Known vs. unknown** — a clear town vs. a "?" gamble with higher upside
+- **Dynamic demand** — towns whose contract demand shifts over the run, so the "best" town depends on timing and current cargo rather than a fixed profile
 
-These are not mutually exclusive; the prototype may combine several axes in a single route choice.
+These are not mutually exclusive; the prototype may combine several axes in a single route choice. The two concrete candidates currently in focus are **dynamic demand** and **known vs. unknown towns**.
+
+A non-pandering route (towns that don't always offer what your build wants) is also the route-side counter-force to the funneling exploit — see [[open/Specialization exploit fix]].
 
 ## Notes
 

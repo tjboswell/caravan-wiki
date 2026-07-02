@@ -1,14 +1,16 @@
 ---
 type: decision
-status: live
+status: superseded
 affects: [The Hub]
 rejected: [engine decay when idle, material loss on starvation]
 supersedes:
-superseded_by:
+superseded_by: [Drop incremental hub for thin unlock pool]
 decided: 2026-06-13
 ---
 
 # Harmless idle, no punishment
+
+> ⚠️ **SUPERSEDED 2026-07-01** — No idle engine to leave running. See [[decisions/Drop incremental hub for thin unlock pool]].
 
 > If the hub runs dry of materials, it simply pauses — no loss, no penalty, no decay.
 

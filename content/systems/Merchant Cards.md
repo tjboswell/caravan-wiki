@@ -1,7 +1,7 @@
 ---
 type: system
-status: live
-touches: [Towns, Cargo, Actions, Contracts]
+status: superseded
+touches: [Towns, Cargo, Actions, Contracts, Joker Combos]
 shaped_by: ["Merchant cards refresh per town, kept when bought", "Actions limited per town, buy and use both cost"]
 open: [What an action can do]
 tags: [run]
@@ -9,6 +9,8 @@ updated: 2026-06-13
 ---
 
 # Merchant Cards
+
+> ⚠️ **SUPERSEDED 2026-07-01** — Owned converters -> a draw-deck of action cards. See [[systems/Action Deck]].
 
 > Things you buy in towns that do stuff — converting or upgrading your cargo. Fully refresh every town; kept when bought; your engine of conversions accumulates across the run.
 
@@ -24,10 +26,12 @@ Each [[systems/Towns|town]] offers a row of local merchant cards — local trade
 
 The specific verbs an action can perform — the full action vocabulary — is an open question. See [[open/What an action can do]].
 
+**Beyond inert converters:** Merchant cards are converters you run. [[systems/Joker Combos|Jokers]] extend the owned-engine model into cards that *trigger off each other* rather than just converting in isolation — the lever meant to separate this game from Century. See [[systems/Joker Combos]].
+
 ## Depends on / feeds into
 
 - Depends on: [[systems/Towns]] (refresh source), [[systems/Actions]] (both buy and use cost an action)
-- Feeds into: [[systems/Cargo]] (conversions/upgrades), [[systems/Contracts]] (enables contract fulfillment)
+- Feeds into: [[systems/Cargo]] (conversions/upgrades), [[systems/Contracts]] (enables contract fulfillment), [[systems/Joker Combos]] (extends the owned-engine model)
 
 ## Open questions
 

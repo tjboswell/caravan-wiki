@@ -1,12 +1,14 @@
 ---
 type: open
-status: open
+status: answered
 affects: [The Hub, Materials]
-answered_by:
+answered_by: [Drop incremental hub for thin unlock pool]
 tags: [structural]
 ---
 
 # Hub reward/consequence structure in detail
+
+> ✅ **ANSWERED 2026-07-01** — Moot — the hub is cut. See [[decisions/Drop incremental hub for thin unlock pool]].
 
 > How exactly does the hub reward progress and handle consequence — milestones, thresholds, unlocks?
 

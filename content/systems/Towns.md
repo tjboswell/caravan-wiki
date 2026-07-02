@@ -1,6 +1,6 @@
 ---
 type: system
-status: live
+status: revisiting
 touches: [The Run, Route, Merchant Cards, Contracts]
 shaped_by: [Era equals town, "Merchant cards refresh per town, kept when bought", Next-town preview on last action]
 open: [Route tradeoff axis]
@@ -9,6 +9,8 @@ updated: 2026-06-13
 ---
 
 # Towns
+
+> 🔄 **REVISITING 2026-07-01** — Towns return only under the journey option; otherwise gates replace them. See [[open/Journey stops vs free shop]].
 
 > The stops on a run — each town has local merchant cards and posts a new contract; the sequence of towns is the run's clock.
 

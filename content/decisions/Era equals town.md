@@ -1,6 +1,6 @@
 ---
 type: decision
-status: live
+status: revisiting
 affects: [Towns, Route, Contracts]
 rejected: [era as multi-town arc, era as time period with separate clock]
 supersedes:
@@ -9,6 +9,8 @@ decided: 2026-06-13
 ---
 
 # Era equals town
+
+> 🔄 **REVISITING 2026-07-01** — Towns are the run unit only under the journey option; gates otherwise. See [[open/Journey stops vs free shop]].
 
 > What was called "era" is now "town" — one stop on the route. The town is also the contract-rotation clock.
 
